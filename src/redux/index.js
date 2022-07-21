@@ -1,3 +1,3 @@
 import { GetProductAction } from './products/productActions';
-import { loginRequest } from './auth/authActions';
-export { GetProductAction,loginRequest };
+export { GetProductAction };
+export * from './auth/authActions';

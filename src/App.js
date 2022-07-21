@@ -7,17 +7,19 @@ import HooksProductContainer from './components/HooksProductContainer';
 import LoginContainer from './components/LoginContainer';
 import NewProductContainer from './components/NewProductContainer';
 import ItemContainer from './components/ItemContainer';
+import UserContainer from './components/UserContainer';
 
 const App = () => {
   return (
     <Provider store={store}>
       <div className='App'>
-        <ItemContainer product />
+        <UserContainer />
+        {/* <ItemContainer product />
         <ItemContainer />
         <ProductContainer />
         <HooksProductContainer />
         <LoginContainer />
-        <NewProductContainer />
+        <NewProductContainer /> */}
       </div>
     </Provider>
   )
