@@ -1,3 +1,4 @@
+const redux = require('redux');
 const GET_ALL_PRODUCT_REQUEST = 'GET_ALL_PRODUCT_REQUEST';
 
 function getAllProductRequest() {
@@ -29,3 +30,17 @@ const reducer = (state = initialState, action) => {
             return state;
     }
 }
+
+//store 
+const createStore = redux.createStore(reducer);
+console.log("Initial State ", createStore.getState());
+const unsubscrube = createStore.subscribe(() => {
+    console.log("Store changed ", createStore.getState());
+});
+
+createStore.dispatch(getAllProductRequest());
+createStore.dispatch(getAllProductRequest());
+createStore.dispatch(getAllProductRequest());
+unsubscrube();
+
+// node src/actions/index.js
