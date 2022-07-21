@@ -12,7 +12,7 @@ const productReducer = (state = initialState, action) => {
         case ProductConstant.GET_ALL_PRODUCT_REQUEST:
             return {
                 ...state,
-                numOfProducts: state.numOfProducts - 1,
+                numOfProducts: state.numOfProducts - action.payload,
                 loading: true,
             }
         default:
