@@ -1,6 +1,7 @@
 import { ProductConstant } from "./productConstants"
 const initialState = {
     products: [],
+    numOfProducts: 10,
     loading: false,
     error: false,
     message: '',
@@ -11,6 +12,7 @@ const productReducer = (state = initialState, action) => {
         case ProductConstant.GET_ALL_PRODUCT_REQUEST:
             return {
                 ...state,
+                numOfProducts: state.numOfProducts - 1,
                 loading: true,
             }
         default:
