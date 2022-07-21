@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { GetProductAction } from  '../redux'
 
 const HooksProductContainer = () => {
-    const numOfProducts = useSelector(state => state.numOfProducts)
+    const numOfProducts = useSelector(state => state.product.numOfProducts)
     const dispatch = useDispatch();
     return (
         <>

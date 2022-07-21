@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
     console.log('ProductContainer state: ', state);
     return {
         // products: state.products.products,
-        numOfProducts: state.numOfProducts,
+        numOfProducts: state.product.numOfProducts,
         // loading: state.products.loading,
         // error: state.products.error,
         // message: state.products.message,

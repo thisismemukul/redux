@@ -1,2 +1,3 @@
 import { GetProductAction } from './products/productActions';
-export { GetProductAction };
+import { loginRequest } from './auth/authActions';
+export { GetProductAction,loginRequest };
