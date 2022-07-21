@@ -7,7 +7,7 @@ const ProductContainer = (props) => {
     return (
         <>
             <h3>No of Products {props.numOfProducts}</h3>
-            <button onClick={props.GetProductAction} >Buy cake </button>
+            <button onClick={props.GetProductAction} >Buy product </button>
         </>
     )
 }
